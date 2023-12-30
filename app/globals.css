@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: "#FFFFFF";
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: #21fa51;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 346.8 77.2% 49.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground h-full text-white;
+  }
+  html {
+    @apply h-full;
+  }
+}
+
+.container {
+  @apply w-full max-w-screen-2xl p-3 md:p-4 mx-auto;
+}
+.web-container {
+  @apply w-full max-w-[1520px] p-4 lg:p-8 mx-auto;
+}
+.alpha-container {
+  @apply w-full max-w-[1760px] p-3 md:p-6 mx-auto;
+}
+
+.button-shadow {
+  -moz-box-shadow: 0 0 5px #21fa51;
+  -webkit-box-shadow: 0 0 5px #21fa51;
+  box-shadow: 0 0 5px #21fa51;
+}
+
+.customReactSelectStyles {
+  height: 36px !important;
+}
+#customReactSelect .css-13cymwt-control {
+  background-color: #0f0f13 !important;
+  border-width: 0px !important;
+}
+#customReactSelect .css-t3ipsp-control {
+  background-color: #0f0f13 !important;
+}
+#customReactSelect .css-1u9des2-indicatorSeparator {
+  width: 0px !important;
+}
+
+.css-1n6sfyn-MenuList {
+  background: black !important;
+}
+#customReactSelect .css-1dimb5e-singleValue {
+  color: white !important;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 2px;
+}
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #6cad96;
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color: #6cad96;
+  }
+  28% {
+    transform: translateY(-7px);
+    background-color: #9ecab9;
+  }
+  44% {
+    transform: translateY(0px);
+    background-color: #b5d9cb;
+  }
+}
+
+.message-container {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.react-scroll-to-bottom--css-qltaa-79elbk {
+  position: relative;
+}
+
+.react-scroll-to-bottom--css-txseu-1n7m0yu {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.hiddenClass {
+  display: none !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #2c2b2b #141414;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: #141414;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2c2b2b;
+  border-radius: 15px;
+  border: 1px solid #0d0c0c;
+}
+.videoClass {
+  width: 100%;
+  height: 100vh;
+  --media-object-fit: cover;
+}
+.mobileVideoClass {
+  width: 100%;
+  height: 100vh;
+  --media-object-fit: cover;
+}
+
+.footerIcon svg {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+
+
+.footerIconLaptop svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+.footerIcon2xlLaptop svg {
+  width: 60px !important;
+  height: 60px !important;
+}
+.footerIconMobile svg {
+  width: 36px !important;
+  height: 36px !important;
+}
+.footerIconTab svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+
+
+.main-logo svg {
+  width: 267.35px !important;
+  height: 46px !important;
+}
+
+.laptop-main-logo svg{
+  width: 157.52px !important;
+  height: 27.1px !important;
+}
+.mobile-main-logo svg{
+  width: 127.91px !important;
+  height: 22.01px !important;
+}
+.default svg{
+  width: 139px !important;
+  height: 40px !important;
+}
