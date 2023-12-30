@@ -89,7 +89,7 @@ function XAlphaHeader() {
                     <CrossIcon />
                   </div>
                 </div>
-                <div className="flex flex-col justify-between h-[88vh]">
+                <div className="flex flex-col justify-between h-[84vh]">
                   <div className="mt-3 ">
                     {Menus.map((data: any, index: number) => {
                       return (
