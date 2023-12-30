@@ -55,7 +55,7 @@ function XAlphaHeader() {
           {Menus.map((data: any, index: number) => {
             return (
               <Link href={`${data.link}`}>
-                <div className="lg:text-[16px] 2xl:text-4xl  text-white font-normal leading-[normal] py-3 px-9 transition-colors duration-300 ease-in-out hover:text-[#99c2fe]">
+                <div className="lg:text-[16px] 2xl:text-4xl  text-white font-normal leading-[normal] py-2 px-6 2xl:py-3 2xl:px-9 transition-colors duration-300 ease-in-out hover:text-[#99c2fe]">
                   {data.title}
                 </div>
               </Link>
